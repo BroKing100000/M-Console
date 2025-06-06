@@ -1,0 +1,27 @@
+{
+  "name": "M-Console",
+  "tree": {
+    "$className": "DataModel",
+    "$ignoreUnknownInstances": true,
+    
+    "StarterGui": {
+
+      "ConsoelGui": {
+        "$className": "ScreenGui",
+        "$ignoreUnknownInstances": true,
+        "$properties": {
+          "DisplayOrder": 0,
+          "ResetOnSpawn": false,
+          "IgnoreGuiInset": true
+        },
+
+        "$path": "src/client"
+      }
+    },
+
+    "ReplicatedStorage": {
+
+      "$path": "src/replicated"
+    }
+  }
+}
