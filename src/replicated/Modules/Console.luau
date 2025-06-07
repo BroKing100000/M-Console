@@ -70,7 +70,7 @@ local Value = function(directory: {}, start: string?)
 		
 		-- [ Variables ] --
 
-		combined = combined .. value
+		combined = combined .. tostring(value)
 	end
 	
 	-- [ Return ] --

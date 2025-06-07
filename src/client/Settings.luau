@@ -1,14 +1,3 @@
--- [ Types ] --
-
-type settings = {
-
-    TRIGGER_KEY: Enum.KeyCode,
-    INPUT_KEY: Enum.KeyCode,
-    THEME: string,
-    FONT: Font,
-    Apply: () -> ()
-}
-
 -- [ Variables ] --
 
 local settings = {
@@ -84,6 +73,18 @@ local themes = {
 		
 		Base = Color3.fromRGB(35, 50, 42),
 		Bar = Color3.fromRGB(0, 255, 81),
+	},
+
+	Blossom = {
+
+		Base = Color3.fromRGB(75, 54, 76),
+		Bar = Color3.fromRGB(244, 83, 255),
+	},
+
+	["Early Sunset"] = {
+
+		Base = Color3.fromRGB(84, 73, 65),
+		Bar = Color3.fromRGB(255, 224, 199),
 	},
 }
 

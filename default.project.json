@@ -7,8 +7,8 @@
     "StarterGui": {
 
       "ConsoelGui": {
-        "$className": "ScreenGui",
         "$ignoreUnknownInstances": true,
+        "$className": "ScreenGui",
         "$properties": {
           "DisplayOrder": 0,
           "ResetOnSpawn": false,
