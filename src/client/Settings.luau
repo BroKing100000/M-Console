@@ -7,6 +7,7 @@ local settings = {
 	THEME = "Default", -- Theme of M-Console.
 	FONT = Font.new("rbxasset://fonts/families/RobotoMono.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal), -- Font of any text in M-Console.
 	MAKE_ANY_TEXT_SELECTABLE = false, -- Makes any text in both consoles being selectable. Or disables that.
+	RAM_LIMIT = 8, -- Displays in monitoring how much RAM memory it can take up in gigabytes.
 
 	-- Do not edit anything below if you don't know what you're doing.
 

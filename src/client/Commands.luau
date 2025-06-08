@@ -9,11 +9,11 @@ return {
 	_commandName = {
 		
 		Title = "_commandName",
-		Args = "_commandName-Args",
-		Description = "Describe what command does",
-		Example = "_commandName-Action (Give an example how to enter command)",
+		Args = "N/A | string | number | any",
+		Description = "Describe what command does.",
+		Example = "_commandName-Action (Give an example how to enter this command).",
 		
-		--Optional
+		--Optional feature.
 		Choices = {
 		
 			"Choice1",

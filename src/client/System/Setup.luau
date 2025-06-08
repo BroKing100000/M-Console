@@ -10,7 +10,7 @@ Custom command.
 Settings.
 Fonts.
 ]]
-return function(gui: ScreenGui, settings: ModuleScript)
+return function(gui: ScreenGui, settings: ModuleScript, monitoring: ModuleScript)
    
     print("🔧 This experience use [M-Console v.1.3.0] by @BroKing100000 🔧") -- Keep the credits. Please.
 
@@ -21,9 +21,11 @@ return function(gui: ScreenGui, settings: ModuleScript)
     command.PrimaryAlias = "/mconsole"
     command.Parent = TextChatService
 
-    -- [ Connections ] --
-
     settings.Apply(gui.Console)
+
+    -- [ Coroutines ] --
+
+    coroutine.wrap(monitoring.RamUsage)(gui.Console.Frames.Monitoring.Memory, settings.RAM_LIMIT)
 
     -- [ Loop ] --
 

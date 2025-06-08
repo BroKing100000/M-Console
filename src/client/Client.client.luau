@@ -16,6 +16,7 @@ local Setup = require(script.Parent.System.Setup)
 local log = require(script.Parent.System.Log)
 local settings = require(script.Parent.Settings)
 local execute = require(script.Parent.System.Execute)
+local monitoring = require(script.Parent.System.Monitoring)
 
 -- [ Mouse ] --
 
@@ -27,7 +28,7 @@ local held = false
 
 -- [ Calls ] --
 
-Setup(gui, settings)
+Setup(gui, settings, monitoring)
 
 -- [ Connections ] --
 
@@ -65,6 +66,7 @@ ReplicatedStorage.Logs.ChildAdded:Connect(function(args)
 	if args:IsA("StringValue") then
 
 		log.Custom(gui.Console, args)
+		monitoring.CustomLog(gui.Console, args)
 	end
 end)
 
@@ -74,6 +76,7 @@ Crates an actual log in M-Console when an actual log is added.
 LogService.MessageOut:Connect(function(message, messageType)
 	
 	log.Actual(gui.Console, message, messageType)
+	monitoring.ActualLog(gui.Console, messageType)
 end)
 
 --[[
